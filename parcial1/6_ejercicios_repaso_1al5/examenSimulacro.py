@@ -44,4 +44,4 @@ while True:
 promedio_final = sum(alumnos) / len(alumnos)
 print("---------------------")
 print(f"Promedio de la calificación final de todos los alumnos capturados: {promedio_final}") 
-print("---------------------")   
+print("---------------------")    

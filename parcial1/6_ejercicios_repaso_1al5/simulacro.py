@@ -33,4 +33,4 @@ try:
     print(f"Total a pagar: ${total_a_pagar:.2f}")
 
 except ValueError:
-    print("Error, tiene que ser un numero")    
+    print("Error, tiene que ser un numero")     

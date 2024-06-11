@@ -22,4 +22,4 @@ print("\n")
 
 #5ta forma
 print('Mi nombre es '+nombre+' estoy en la especialidad de '+especialidad+' en la carrera de '+carrera)
-print("\n")
+print("\n") 

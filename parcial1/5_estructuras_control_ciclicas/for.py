@@ -24,5 +24,5 @@ print("Bienvenido a las tablas de multiplicar")
 numero=int(input("Introduzca un numero para su tabla de multiplicar: "))
 mult=0
 for i in range(1,11):
-    mult=numero*i
+    mult=numero*i 
     print(f"{numero} * {i} = {mult}")

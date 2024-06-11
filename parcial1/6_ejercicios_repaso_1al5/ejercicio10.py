@@ -16,4 +16,4 @@ while i<=15:
                 i+=1    
     except ValueError:
         print("El promedio tiene que ser un numero")
-print(f"La cantidad de alumnos que aprobaron es {aprobados}\nLa cantidad de alumnos que reprobaron es {reprobados}")  
+print(f"La cantidad de alumnos que aprobaron es {aprobados}\nLa cantidad de alumnos que reprobaron es {reprobados}")   

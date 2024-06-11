@@ -6,3 +6,4 @@ try:
     print(f"El {porcentaje}% de {numero} es {resultado}")
 except ValueError:
     print("Por favor, ingrese valores numéricos válidos.")
+ 

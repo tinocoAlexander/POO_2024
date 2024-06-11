@@ -12,4 +12,4 @@ multiplicacion=numero1*numero2
 print(f"El resultado de su multiplicación es {multiplicacion}")
 #División
 division=numero1/numero2
-print(f"El resultado de su division es {division}")
+print(f"El resultado de su division es {division}") 

@@ -16,4 +16,4 @@ while True:
             print("--------------------------------")
             break    
     except ValueError:
-        print("Su numero no es un entero, pruebe de nuevo")        
+        print("Su numero no es un entero, pruebe de nuevo")         

@@ -38,4 +38,4 @@ if(color=="rojo"):
 elif(color=="negro"):
     print("Soy color negro")
 elif(color=="verde"):
-    print("Soy color verde")                
+    print("Soy color verde")                 

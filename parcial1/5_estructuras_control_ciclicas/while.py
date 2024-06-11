@@ -32,4 +32,4 @@ mult=0
 while i<=10:
     mult=numero*i
     print(f"{numero} * {i} = {mult}")
-    i+=1
+    i+=1 

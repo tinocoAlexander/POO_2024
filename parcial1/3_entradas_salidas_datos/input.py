@@ -17,4 +17,4 @@ print(f"""
             Especialidad: {especialidad}
             Edad: {edad}
             Estatura: {estatura}
-      """)
+      """) 

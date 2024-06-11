@@ -10,4 +10,4 @@ while numero<=60:
 print("Solución for")
 for numero in range (1,61):
     cuadrado=numero*numero
-    print(cuadrado)
+    print(cuadrado) 

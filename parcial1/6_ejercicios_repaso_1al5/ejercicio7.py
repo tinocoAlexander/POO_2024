@@ -7,4 +7,4 @@ if(lim1>lim2):
 
 for i in range(lim1,lim2+1):
     if i % 2 !=0:
-        print(i)
+        print(i) 

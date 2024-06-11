@@ -5,4 +5,4 @@ if lim1 > lim2:
     lim1, lim2 = lim2, lim1
 
 for i in range(lim1, lim2+1):
-    print(i)
+    print(i) 
