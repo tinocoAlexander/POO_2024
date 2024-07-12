@@ -1,33 +1,52 @@
-from empleados import Personas, Estudiantes, Maestro
+from empleados import Personas, Estudiantes, Profesores, Clases, Calificaciones
 
-# Creación de objetos Personas
-persona1 = Personas("Juan", "González", "López", 20, "555-1234", "juan@example.com", "Calle Principal 123")
-persona2 = Personas("María", "Martínez", "Sánchez", 22, "555-5678", "maria@example.com", "Av. Independencia 456")
+# Creación de dos objetos de la clase Personas
+persona1 = Personas("Luis", "Ramírez", "Torres", 30, "555-9876", "luis.ramirez@example.com", "Calle Principal 101", "Universidad Nacional", False, "password123")
+persona2 = Personas("Elena", "Mendoza", "Rojas", 25, "555-1234", "elena.mendoza@example.com", "Calle Secundaria 202", "Universidad Nacional", False, "mypassword")
 
-# Creación de objetos Estudiantes
-estudiante1 = Estudiantes("Carlos", "Pérez", "García", 18, "555-2468", "carlos@example.com", "Calle de la Paz 789",
-                          "Escuela Secundaria", "E12345", "3ro", "A", 9.2)
-estudiante2 = Estudiantes("Laura", "López", "Gómez", 21, "555-1357", "laura@example.com", "Av. Juárez 101",
-                          "Preparatoria", "E67890", "6to", "B", 8.5)
+# Creación de dos objetos de la clase Estudiantes
+estudiante1 = Estudiantes("Juan", "Pérez", "Gómez", 20, "555-1234", "juan.perez@example.com", "Calle Falsa 123", "Universidad Nacional", "20211234", 2, "A", 9.2, "Clásica", "Ingeniería")
+estudiante2 = Estudiantes("María", "López", "Fernández", 21, "555-5678", "maria.lopez@example.com", "Calle Verdadera 456", "Universidad Nacional", "20215678", 3, "B", 8.5, "Bilingue", "Medicina")
 
-# Creación de objetos Maestro
-maestro1 = Maestro("Pedro", "Ramírez", "Pérez", 35, "555-3579", "pedro@example.com", "Calle Principal 456",
-                   "Escuela Primaria", "Profesor", 40000, 12)
-maestro2 = Maestro("Ana", "Gutiérrez", "Martínez", 40, "555-7890", "ana@example.com", "Av. Reforma 789", 
-                   "Escuela Secundaria", "Directora", 60000, 18)
+# Creación de dos objetos de la clase Profesores
+profesor1 = Profesores("Carlos", "Martínez", "Rodríguez", 45, "555-8765", "carlos.martinez@example.com", "Avenida Siempreviva 789", "Universidad Nacional", "Profesor Titular", 50000, 10, "Doctorado", ["Matemáticas", "Física"])
+profesor2 = Profesores("Ana", "González", "Hernández", 38, "555-4321", "ana.gonzalez@example.com", "Bulevar de los Sueños 321", "Universidad Nacional", "Profesor Asociado", 40000, 5, "Maestría", ["Química", "Biología"])
 
-# Imprimir información de los objetos creados
-print("Información de la persona 1:")
+# Creación de dos objetos de la clase Clases
+clase1 = Clases("Carlos", "Martínez", "Rodríguez", 45, "555-8765", "carlos.martinez@example.com", "Avenida Siempreviva 789", "Universidad Nacional", "Profesor Titular", 50000, 10, "Doctorado", ["Matemáticas", "Física"], "Física", "Lunes 8:00-10:00")
+clase2 = Clases("Ana", "González", "Hernández", 38, "555-4321", "ana.gonzalez@example.com", "Bulevar de los Sueños 321", "Universidad Nacional", "Profesor Asociado", 40000, 5, "Maestría", ["Química", "Biología"], "Química", "Martes 10:00-12:00")
+
+# Creación de dos objetos de la clase Calificaciones
+calificacion1 = Calificaciones(estudiante1, clase1, {"Parcial 1": 9.5, "Parcial 2": 8.5, "Parcial 3": 9.0})
+calificacion2 = Calificaciones(estudiante2, clase2, {"Parcial 1": 8.0, "Parcial 2": 9.0, "Parcial 3": 10.0})
+
+# Mostrar información de los objetos creados
+print("Objetos de persona:\n")
+print("Persona 1:\n")
 print(persona1.get_info())
-print("\nInformación de la persona 2:")
+print("\nPersona 2:\n")
 print(persona2.get_info())
 
-print("\nInformación del estudiante 1:")
+print("\nObjetos de estudiante:\n")
+print("Estudiante 1:\n")
 print(estudiante1.get_info())
-print("\nInformación del estudiante 2:")
+print("\nEstudiante 2:\n")
 print(estudiante2.get_info())
 
-print("\nInformación del maestro 1:")
-print(maestro1.get_info())
-print("\nInformación del maestro 2:")
-print(maestro2.get_info())
+print("\nObjetos de profesor:\n")
+print("Profesor 1:\n")
+print(profesor1.get_info())
+print("\nProfesor 2:\n")
+print(profesor2.get_info())
+
+print("\nObjetos de clase:\n")
+print("Clase 1:\n")
+print(clase1.get_info())
+print("\nClase 2:\n")
+print(clase2.get_info())
+
+print("\nObjetos de calificación:\n")
+print("Calificación 1:\n")
+print(calificacion1.get_info())
+print("\nCalificación 2:\n")
+print(calificacion2.get_info())
